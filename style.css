@@ -22,6 +22,11 @@
     scroll-behavior: smooth;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background: var(--bg);
@@ -471,4 +476,78 @@ footer p {
 @media (max-width: 540px) {
     .gallery-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 0.6rem; text-align: center; }
+}
+
+/* ─── VIDEO THUMBNAIL LINK ─── */
+.yt-thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #000;
+    text-decoration: none;
+}
+
+.yt-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.82) grayscale(15%);
+    transition: filter 0.4s, transform 0.5s;
+}
+
+.yt-thumb:hover img {
+    filter: brightness(0.65) grayscale(0%);
+    transform: scale(1.03);
+}
+
+.yt-thumb .play-btn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    pointer-events: none;
+}
+
+.yt-thumb .play-ring {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.65);
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background 0.3s, transform 0.3s;
+}
+
+.yt-thumb:hover .play-ring {
+    border-color: var(--gold);
+    background: var(--gold-dim);
+    transform: scale(1.1);
+}
+
+.yt-thumb .play-ring svg {
+    width: 22px; height: 22px;
+    fill: #fff;
+    margin-left: 4px;
+}
+
+.yt-thumb .play-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    font-family: 'DM Sans', sans-serif;
+    transition: color 0.3s;
+}
+
+.yt-thumb:hover .play-label {
+    color: var(--gold);
 }

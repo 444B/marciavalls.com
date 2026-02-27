@@ -78,14 +78,24 @@
             <span class="section-label">Video Reel</span>
             <h2 class="section-title">Trabajo en pantalla</h2>
             <div class="video-container">
-                <div class="video-embed">
-                    <iframe
-                        src="https://www.youtube.com/embed/41xXY1T8DQ4"
-                        title="Aún así, me enamoré — Marcia Valls"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-                </div>
+                <a
+                    class="yt-thumb"
+                    href="https://www.youtube.com/watch?v=41xXY1T8DQ4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="https://img.youtube.com/vi/41xXY1T8DQ4/maxresdefault.jpg"
+                        alt="Aún así, me enamoré — Ver en YouTube"
+                        onerror="this.src='https://img.youtube.com/vi/41xXY1T8DQ4/hqdefault.jpg'"
+                    >
+                    <div class="play-btn">
+                        <div class="play-ring">
+                            <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <span class="play-label">Ver en YouTube</span>
+                    </div>
+                </a>
                 <div class="video-caption">
                     <span>Aún así, me enamoré</span>
                     <small>Monólogo · 2023</small>
