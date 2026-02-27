@@ -3,79 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcia Valls - Portafolio</title>
+    <title>Marcia Valls — Actriz</title>
+    <meta name="description" content="Portafolio profesional de Marcia Valls, actriz y autora radicada en Montevideo, Uruguay.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav>
+    <nav id="nav">
         <div class="logo">MV</div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#reel">Reel</a></li>
             <li><a href="#curriculum">Currículum</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
         <div class="lang-toggle">
             <a href="en/index.html" class="btn-lang">EN</a>
         </div>
     </nav>
 
+    <!-- ─── HERO ─── -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <img src="https://via.placeholder.com/300x400/333/fff?text=Foto+Marcia+Valls" alt="Marcia Valls Headshot" class="headshot">
-            [cite_start]<h1>Marcia Valls [cite: 5]</h1>
-            [cite_start]<p>Actriz y Autora en Montevideo, Uruguay[cite: 3, 33].</p>
-            [cite_start]<p>Egresada de la "Generación 2023" de Escuela La Escena [cite: 5][cite_start], especializada en actuación hipernaturalista para medios audiovisuales[cite: 20].</p>
+        <div class="hero-image">
+            <img
+                src="assets/images/1.jpeg"
+                alt="Marcia Valls"
+                class="headshot"
+            >
+        </div>
+        <div class="hero-text">
+            <span class="hero-eyebrow">Actriz · Autora · Montevideo</span>
+            <h1>Marcia<br><em>Valls</em></h1>
+            <p class="hero-desc">
+                Actriz y autora formada en la Generación 2023 de Escuela La Escena, especializada en actuación hipernaturalista para medios audiovisuales.
+            </p>
+            <div class="hero-tags">
+                <span class="tag">Hipernaturalismo</span>
+                <span class="tag">Medios Audiovisuales</span>
+                <span class="tag">Autora-Actriz</span>
+                <span class="tag">Uruguay</span>
+            </div>
         </div>
     </section>
 
+    <!-- ─── GALLERY ─── -->
     <section id="galeria" class="gallery">
-        <h2>Galería</h2>
-        <div class="grid">
-            <img src="https://via.placeholder.com/400x400/222/fff?text=Foto+1" alt="Galería 1">
-            <img src="https://via.placeholder.com/400x400/222/fff?text=Foto+2" alt="Galería 2">
-            <img src="https://via.placeholder.com/400x400/222/fff?text=Foto+3" alt="Galería 3">
-            <img src="https://via.placeholder.com/400x400/222/fff?text=Foto+4" alt="Galería 4">
+        <div class="gallery-header reveal">
+            <span class="section-label">Galería</span>
+            <h2 class="section-title">Fotografías</h2>
+        </div>
+        <div class="gallery-grid reveal">
+            <div class="g-item">
+                <img src="assets/images/6.jpeg" alt="Marcia Valls">
+            </div>
+            <div class="g-item">
+                <img src="assets/images/4.jpeg" alt="Marcia Valls">
+            </div>
+            <div class="g-item">
+                <img src="assets/images/2.jpeg" alt="Marcia Valls">
+            </div>
+            <div class="g-item">
+                <img src="assets/images/3.jpeg" alt="Marcia Valls">
+            </div>
+            <div class="g-item">
+                <img src="assets/images/5.jpeg" alt="Marcia Valls">
+            </div>
         </div>
     </section>
 
-    <section id="reel" class="video-reel">
-        <h2>Video Reel</h2>
-        [cite_start]<p>Monólogo: "Aún así, me enamoré" [cite: 30]</p>
-        <div class="video-container">
-            <a href="https://www.youtube.com/watch?v=41xXY1T8DQ4" target="_blank" class="video-link" rel="noopener noreferrer">
-                <img src="https://img.youtube.com/vi/41xXY1T8DQ4/maxresdefault.jpg" alt="Aún así, me enamoré en YouTube" onerror="this.src='https://via.placeholder.com/800x450/222/fff?text=Ver+Monólogo+en+YouTube'">
-                <div class="play-button">▶</div>
-            </a>
+    <!-- ─── REEL ─── -->
+    <section id="reel">
+        <div class="reel-inner reveal">
+            <span class="section-label">Video Reel</span>
+            <h2 class="section-title">Trabajo en pantalla</h2>
+            <div class="video-container">
+                <div class="video-embed">
+                    <iframe
+                        src="https://www.youtube.com/embed/41xXY1T8DQ4"
+                        title="Aún así, me enamoré — Marcia Valls"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="video-caption">
+                    <span>Aún así, me enamoré</span>
+                    <small>Monólogo · 2023</small>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- ─── RESUME ─── -->
     <section id="curriculum" class="resume">
-        <h2>Currículum Profesional</h2>
-        
-        <div class="resume-section">
-            <h3>Créditos Destacados</h3>
-            <ul>
-                [cite_start]<li><strong>Aún así, me enamoré</strong> (2023) - Rol: Autora y Actriz[cite: 30, 32].</li>
-                [cite_start]<li><strong>Monólogos Taller para NO actuar</strong> - Intérprete Destacada[cite: 34, 36].</li>
-                [cite_start]<li><strong>Escuela La Escena Gen 2023</strong> - Actriz en Cortometraje[cite: 36].</li>
-            </ul>
-        </div>
+        <div class="resume-inner">
+            <span class="section-label reveal">Currículum</span>
+            <h2 class="section-title reveal">Créditos y Formación</h2>
 
-        <div class="resume-section">
-            <h3>Formación Académica</h3>
-            <ul>
-                [cite_start]<li><strong>Escuela La Escena</strong> - Programa de Formación Profesional, Generación 2023[cite: 5, 96].</li>
-                [cite_start]<li><strong>Taller para NO actuar</strong> (2023) - Taller de actuación hipernaturalista dirigido por Oscar Estévez[cite: 19, 20, 91].</li>
-            </ul>
+            <div class="resume-grid">
+                <div class="resume-col reveal">
+                    <h3>Créditos</h3>
+                    <div class="resume-item">
+                        <div class="title">Aún así, me enamoré</div>
+                        <span class="year">2023</span>
+                        <div class="detail">Autora y actriz — Monólogo original</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="title">Monólogos Taller para NO actuar</div>
+                        <span class="year">2023</span>
+                        <div class="detail">Intérprete destacada</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="title">Cortometraje — Escuela La Escena</div>
+                        <span class="year">2023</span>
+                        <div class="detail">Actriz — Generación 2023</div>
+                    </div>
+                </div>
+
+                <div class="resume-col reveal">
+                    <h3>Formación</h3>
+                    <div class="resume-item">
+                        <div class="title">Escuela La Escena</div>
+                        <span class="year">2023</span>
+                        <div class="detail">Programa de Formación Profesional — Generación 2023. Actuación y oficios audiovisuales.</div>
+                    </div>
+                    <div class="resume-item">
+                        <div class="title">Taller para NO actuar</div>
+                        <span class="year">2023</span>
+                        <div class="detail">Actuación hipernaturalista — Dir. Oscar Estévez</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contacto" class="contact reveal">
+        <span class="contact-cta">¿Trabajamos juntos?</span>
+        <div class="contact-links">
+            <a href="mailto:contacto@marciavalls.com">Correo electrónico</a>
+            <a href="https://www.youtube.com/watch?v=41xXY1T8DQ4" target="_blank" rel="noopener noreferrer">Ver reel</a>
         </div>
     </section>
 
     <footer>
+        <span class="footer-logo">MV</span>
         <p>&copy; 2026 Marcia Valls. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        });
+        const observer = new IntersectionObserver(
+            (entries) => entries.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            }),
+            { threshold: 0.1 }
+        );
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>
